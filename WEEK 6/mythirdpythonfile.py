@@ -93,3 +93,42 @@ print(myInfo)
 print(myInfo["Hobbies"])
 print(myInfo["Hobbies"][1])
 
+simpleATMMachineDatabase = [
+    {
+        "Name": {
+            "FirstName": "sasuke",
+            "LastName": "uchiha"
+        },
+        "AccountNumber": 212121,
+        "PIN" : 1234,
+        "ControlNumber": 25,
+        "Balance": 10
+    },
+    {
+        "Name": {
+            "FirstName": "jyle",
+            "LastName": "bernabe"
+        },
+        "AccountNumber": 12345678,
+        "PIN": 2121,
+        "ControlNumber": 2121,
+        "Balance": 100000000000000000000000
+    },
+    {
+        "Name": {
+            "FirstName": "mathiue",
+            "LastName": "james"
+        },
+        "AccountNumber": 212121,
+        "PIN": 2132,
+        "ControlNumber": 26,
+        "Balance": 1
+    }
+]
+
+myName = input("Please enter your name")
+print(myName)
+myAccountNumber = input("Please enter your Account number")
+print(myAccountNumber)
+myPinNumber = input("Please enter your PIN number")
+print(myPinNumber)
