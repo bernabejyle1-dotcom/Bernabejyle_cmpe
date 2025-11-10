@@ -1,0 +1,45 @@
+
+charList = [
+    'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t',
+    'u','v','w','x','y','z',
+    'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T',
+    'U','V','W','X','Y','Z',
+    '0','1','2','3','4','5','6','7','8','9',
+    " ","!","@","#","$","%","^","&","*","(",")","-","_","=","+",
+    "[","]","{","}",";",":","'",'"',",","<",".",">","/","?","\\","|","`","~"
+]
+
+
+def encrypt(text, key):
+    encrypted = ""
+    for ch in text:
+        if ch in charList:
+            index = charList.index(ch)
+            newIndex = (index + key) % len(charList)
+            encrypted += charList[newIndex]
+        else:
+            encrypted += ch
+    return encrypted
+
+
+def decrypt(text, key):
+    decrypted = ""
+    for ch in text:
+        if ch in charList:
+            index = charList.index(ch)
+            newIndex = (index - key) % len(charList)
+            decrypted += charList[newIndex]
+        else:
+            decrypted += ch
+    return decrypted
+
+# STEP 4: USER INPUT (YOU WILL TYPE HERE)
+myInput = input("code master123: ")
+key = int(input("Enter key (21): "))
+
+
+encryptedText = encrypt(myInput, key)
+print("\nEncrypted Text:", encryptedText)
+
+decryptedText = decrypt(encryptedText, key)
+print("Decrypted Text:", decryptedText)
