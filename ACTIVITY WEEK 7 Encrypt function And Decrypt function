@@ -33,7 +33,7 @@ def decrypt(text, key):
             decrypted += ch
     return decrypted
 
-# STEP 4: USER INPUT (YOU WILL TYPE HERE)
+
 myInput = input("code master123: ")
 key = int(input("Enter key (21): "))
 
