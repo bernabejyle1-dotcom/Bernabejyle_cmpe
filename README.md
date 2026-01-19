@@ -5,8 +5,6 @@ Organized weekly folders to clearly document my progress and learning developmen
 
 Python programs covering fundamental topics such as variables, conditionals, loops, functions, and basic encryption
 
-Activities related to electronics concepts including resistors, capacitors, and inductance
-
 Emphasis on readable, well-structured code and proper documentation
 
 A reflection of my effort, discipline, and commitment to learning throughout the CMPLE course
